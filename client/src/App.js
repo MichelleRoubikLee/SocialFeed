@@ -14,8 +14,8 @@ function App() {
 
   return (
     <div className="App">
-      <NewPost/>
-      <NewsFeed posts = {posts}/>
+      <NewPost  posts = {posts} setPosts={setPosts}/>
+      <NewsFeed posts = {posts} />
     </div>
   );
 }

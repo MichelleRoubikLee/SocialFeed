@@ -3,7 +3,11 @@ import DisplayPost from './DisplayPost';
 
 function NewsFeed(props) {
     return ( 
-        <DisplayPost post = {props.posts[0]}/>
+        <div>
+            {props.posts.map((post)=><DisplayPost post = {post}/>)}
+        </div>
+        
+        
      );
 }
 
